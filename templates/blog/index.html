@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Alireza Kamankesh | Web Developer & Mobile Repair Specialist{% endblock %}
+{% block meta_description %}Computer Engineering Student passionate about web development, AI projects, and building full-stack applications with Django and Python.{% endblock %}
+{% block meta_keywords %}web developer, python, django, frontend, backend, mobile repair, alireza kamankesh{% endblock %}
+
+{% block og_title %}Alireza Kamankesh | Creative Web Developer{% endblock %}
+{% block og_description %}Turning ideas into reality with Python, Django, and modern web technologies.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Alireza Kamankesh</span></h1>
+                    <h2 data-aos="fade-up" data-aos-delay="300">
+                        <span class="typed" data-typed-items="Web Developer, Python Developer, Backend Developer, Frontend Developer, Mobile Repair Specialist"></span>
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="400">
+                        I am a Computer Engineering student passionate about web development, artificial intelligence, and modern tech tools. I build e-commerce websites, AI projects, and deploy full-stack applications with admin panels and custom management systems.
+                    </p>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                        <a href="{% url 'blog:portfolio' %}" class="btn btn-primary">View My Work</a>
+                        <a href="{% url 'blog:contact' %}" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://github.com/kamankeshalireza" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alireza-kamankesh" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:kamankeshalireza30@gmail.com"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="image-wrapper">
+                        <img src="{% static 'assets/img/profile/profile-square-11.webp' %}" alt="Alireza Kamankesh - Web Developer" class="img-fluid" />
+                        <div class="floating-elements">
+                            <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
+                                <i class="bi bi-code-slash"></i>
+                                <span>Code</span>
+                            </div>
+                            <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                                <i class="bi bi-robot"></i>
+                                <span>AI</span>
+                            </div>
+                            <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                                <i class="bi bi-lightbulb"></i>
+                                <span>Ideas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

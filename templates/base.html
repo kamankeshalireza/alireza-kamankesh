@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>{% block title %}Alireza Kamankesh | Web Developer{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Alireza Kamankesh is a Computer Engineering Student and Web Developer specializing in Python, Django, and Full-Stack Development.{% endblock %}" />
+    <meta name="keywords" content="{% block meta_keywords %}Alireza Kamankesh, Web Developer, Django, Python, Backend Developer, Mobile Repair{% endblock %}" />
+    <meta name="author" content="Alireza Kamankesh" />
+    
+    {% block canonical %}
+    <link rel="canonical" href="https://yourdomain.com{{ request.path }}" />
+    {% endblock %}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com{{ request.path }}" />
+    <meta property="og:title" content="{% block og_title %}Alireza Kamankesh | Web Developer{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}Computer Engineering Student passionate about web development and AI.{% endblock %}" />
+    <meta property="og:image" content="{% static 'assets/img/profile/profile-square-11.png' %}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourdomain.com{{ request.path }}" />
+    <meta property="twitter:title" content="{% block twitter_title %}Alireza Kamankesh | Web Developer{% endblock %}" />
+    <meta property="twitter:description" content="{% block twitter_description %}Full-stack developer specializing in Django and Python.{% endblock %}" />
+    <meta property="twitter:image" content="{% static 'assets/img/profile/profile-square-11.png' %}" />
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" />
+
+    {% block extra_head %}{% endblock %}
+    
+    <!-- JSON-LD Structured Data -->
+    {% block structured_data %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alireza Kamankesh",
+      "url": "https://yourdomain.com/",
+      "image": "https://yourdomain.com{% static 'assets/img/profile/profile-square-11.webp' %}",
+      "jobTitle": "Web Developer",
+      "sameAs": [
+        "https://github.com/kamankeshalireza",
+        "https://www.linkedin.com/in/alireza-kamankesh"
+      ]
+    }
+    </script>
+    {% endblock %}
+</head>
+
+<body class="{% block body_class %}index-page{% endblock %}">
+    
+    {% include 'includes/header.html' %}
+
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

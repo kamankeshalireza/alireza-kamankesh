@@ -1,28 +1,17 @@
-"""
-Sitemap configuration for SEO.
-"""
-
 from django.contrib.sitemaps import Sitemap
-from .models import Post, Project
+from django.urls import reverse
 
-
-class PostSitemap(Sitemap):
-    changefreq = "weekly"
-    priority = 0.9
-
-    def items(self):
-        return Post.objects.filter(status='published')
-
-    def lastmod(self, obj):
-        return obj.updated_at
-
-
-class ProjectSitemap(Sitemap):
-    changefreq = "monthly"
-    priority = 0.7
+class StaticViewSitemap(Sitemap):
+    priority = 1.0
+    changefreq = 'weekly'
 
     def items(self):
-        return Project.objects.all()
+        return ['blog:index', 'blog:about', 'blog:resume', 'blog:services', 'blog:portfolio', 'blog:contact']
 
-    def lastmod(self, obj):
-        return obj.updated_at
+    def location(self, item):
+        return reverse(item)
+
+    def lastmod(self, item):
+        # می‌تونی تاریخ آخرین تغییر رو برگردونی
+        from datetime import datetime
+        return datetime.now()

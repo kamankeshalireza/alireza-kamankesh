@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Alireza Kamankesh</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'blog:index' %}">Home</a></li>
+          <li><a href="{% url 'blog:about' %}">About</a></li>
+          <li><a href="{% url 'blog:resume' %}">Resume</a></li>
+          <li><a href="{% url 'blog:services' %}">Services</a></li>
+          <li><a href="{% url 'blog:portfolio' %}" class="active">Portfolio</a></li>
+          <li><a href="{% url 'blog:contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/kamankeshalireza" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/alireza-kamankesh" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:kamankeshalireza30@gmail.com"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A selection of projects showcasing my skills in web development, AI, and full-stack deployment.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ai">AI</li>
+            <li data-filter=".filter-ecommerce">E-Commerce</li>
+            <li data-filter=".filter-management">Management</li>
+            <li data-filter=".filter-portfolio">Portfolio</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" alt="AI Chatbot" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="{% static 'assets/img/portfolio/portfolio-1.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>AI-Powered Chatbot</h4>
+                  <p>Intelligent chatbot built with Python</p>
+                  <div class="portfolio-tags">
+                    <span>AI</span>
+                    <span>Python</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" alt="E-Commerce Website" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="{% static 'assets/img/portfolio/portfolio-2.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Full E-Commerce Website</h4>
+                  <p>Complete online store with Django + Bootstrap</p>
+                  <div class="portfolio-tags">
+                    <span>Django</span>
+                    <span>Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-management">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="{% static 'assets/img/portfolio/portfolio-3.webp' %}" alt="Cafe Menu System" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="{% static 'assets/img/portfolio/portfolio-3.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Cafe Menu Management System</h4>
+                  <p>Full management system with live deployment</p>
+                  <div class="portfolio-tags">
+                    <span>Management</span>
+                    <span>Deployment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolio">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="{% static 'assets/img/portfolio/portfolio-4.webp' %}" alt="Personal Portfolio" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="{% static 'assets/img/portfolio/portfolio-4.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Personal Portfolio Website</h4>
+                  <p>This website — built with Django &amp; FolioOne</p>
+                  <div class="portfolio-tags">
+                    <span>Django</span>
+                    <span>Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+          <a href="https://github.com/kamankeshalireza" target="_blank" class="btn btn-primary">View All on GitHub</a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Alireza Kamankesh</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/kamankeshalireza" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/alireza-kamankesh" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:kamankeshalireza30@gmail.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
