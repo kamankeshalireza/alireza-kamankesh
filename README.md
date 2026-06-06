@@ -112,22 +112,25 @@
    ```bash
    git clone https://github.com/kamankeshalireza/mysite.git
    cd mysite
-   
-   python -m venv venv
+
+Create virtual environment
+python -m venv venv
 
 # Windows
 venv\Scripts\activate
 
 # Linux/Mac
 source venv/bin/activate
-
+Install dependencies
 pip install -r requirements.txt
-
+Apply migrations
 python manage.py makemigrations
 python manage.py migrate
-
+Create superuser (for admin panel)
+python manage.py createsuperuser
+Collect static files
 python manage.py collectstatic --noinput
-
+Run the server
 python manage.py runserver
 Open browser
 
