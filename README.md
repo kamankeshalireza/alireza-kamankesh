@@ -153,29 +153,52 @@ mysite/
 
 │   └── sitemaps.py         # Sitemap generation
 
-├── mysite/                  # Project configuration
-│   ├── settings.py         # Django settings
+├── mysite/                  # Project configuration       
+
+│   ├── settings.py         # Django settings      
+
 │   ├── urls.py             # Root URL configuration
+
 │   └── wsgi.py             # WSGI deployment
+
 ├── static/                  # Static files (CSS, JS, Images)
+
 │   └── assets/
+
 │       ├── css/            # Stylesheets
+
 │       ├── js/             # JavaScript files
+
 │       ├── img/            # Images and icons
+
 │       └── vendor/         # Third-party libraries
+
 ├── templates/               # HTML templates
+
 │   ├── base.html           # Base template
+
 │   ├── 404.html            # Custom error page
+
 │   ├── blog/               # Page templates
+
 │   └── includes/           # Header, Footer components
+
 ├── locale/                  # Translation files
+
 │   ├── en/                 # English translations
+
 │   └── fa/                 # Persian translations
+
 ├── media/                   # User-uploaded files
+
 ├── staticfiles/             # Collected static files
+
 ├── manage.py               # Django management script
+
 ├── requirements.txt        # Python dependencies
+
 └── .env                    # Environment variables
+
 
 
 📊 SEO Performance
@@ -235,8 +258,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Alireza Kamankesh
 
 https://img.shields.io/badge/Website-alirezakamankesh.pythonanywhere.com-blue
+
 https://img.shields.io/badge/LinkedIn-alireza--kamankesh-0077B5?logo=linkedin
+
 https://img.shields.io/badge/GitHub-kamankeshalireza-181717?logo=github
+
 https://img.shields.io/badge/Email-kamankeshalireza30@gmail.com-D14836?logo=gmail
 
 🙏 Acknowledgments
