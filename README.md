@@ -140,12 +140,19 @@ Admin: http://127.0.0.1:8000/admin/
 
 📁 Project Structure
 mysite/
+
 ├── blog/                    # Main application
+
 │   ├── models.py           # Database models
+
 │   ├── views.py            # View functions
+
 │   ├── urls.py             # URL routing
+
 │   ├── admin.py            # Admin configuration
+
 │   └── sitemaps.py         # Sitemap generation
+
 ├── mysite/                  # Project configuration
 │   ├── settings.py         # Django settings
 │   ├── urls.py             # Root URL configuration
