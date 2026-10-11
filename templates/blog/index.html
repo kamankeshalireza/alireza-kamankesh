@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Alireza Kamankesh | Web Developer & Mobile Repair Specialist{% endblock %}
-{% block meta_description %}Computer Engineering Student passionate about web development, AI projects, and building full-stack applications with Django and Python.{% endblock %}
-{% block meta_keywords %}web developer, python, django, frontend, backend, mobile repair, alireza kamankesh{% endblock %}
+{% block title %}{% trans "Alireza Kamankesh | Web Developer & Mobile Repair Specialist" %}{% endblock %}
+{% block meta_description %}{% trans "Alireza Kamankesh is a Computer Engineering student and Django/Python web developer. I build e-commerce websites, AI projects and full-stack applications." %}{% endblock %}
+{% block meta_keywords %}{% trans "web developer, python, django, frontend, backend, mobile repair, alireza kamankesh" %}{% endblock %}
 
-{% block og_title %}Alireza Kamankesh | Creative Web Developer{% endblock %}
-{% block og_description %}Turning ideas into reality with Python, Django, and modern web technologies.{% endblock %}
+{% block og_title %}{% trans "Alireza Kamankesh | Creative Web Developer" %}{% endblock %}
+{% block og_description %}{% trans "Turning ideas into reality with Python, Django, and modern web technologies." %}{% endblock %}
 
 {% block content %}
 <!-- Hero Section -->
@@ -15,16 +15,16 @@
         <div class="row gy-4 align-items-center">
             <div class="col-lg-6 order-2 order-lg-1">
                 <div class="hero-content">
-                    <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Alireza Kamankesh</span></h1>
+                    <h1 data-aos="fade-up" data-aos-delay="200">{% trans "Hello, I'm" %} <span class="highlight">{% trans "Alireza Kamankesh" %}</span></h1>
                     <h2 data-aos="fade-up" data-aos-delay="300">
-                        <span class="typed" data-typed-items="Web Developer, Python Developer, Backend Developer, Frontend Developer, Mobile Repair Specialist"></span>
+                        <span class="typed" data-typed-items="{% trans "Web Developer, Python Developer, Backend Developer, Frontend Developer, Mobile Repair Specialist" as typed_items %}{{ typed_items }}"></span>
                     </h2>
                     <p data-aos="fade-up" data-aos-delay="400">
-                        I am a Computer Engineering student passionate about web development, artificial intelligence, and modern tech tools. I build e-commerce websites, AI projects, and deploy full-stack applications with admin panels and custom management systems.
+                        {% trans "I am a Computer Engineering student passionate about web development, artificial intelligence, and modern tech tools. I build e-commerce websites, AI projects, and deploy full-stack applications with admin panels and custom management systems." %}
                     </p>
                     <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                        <a href="{% url 'blog:portfolio' %}" class="btn btn-primary">View My Work</a>
-                        <a href="{% url 'blog:contact' %}" class="btn btn-outline">Get In Touch</a>
+                        <a href="{% url 'blog:portfolio' %}" class="btn btn-primary">{% trans "View My Work" %}</a>
+                        <a href="{% url 'blog:contact' %}" class="btn btn-outline">{% trans "Get In Touch" %}</a>
                     </div>
                     <div class="social-links" data-aos="fade-up" data-aos-delay="600">
                         <a href="https://github.com/kamankeshalireza" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
@@ -40,15 +40,15 @@
                         <div class="floating-elements">
                             <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
                                 <i class="bi bi-code-slash"></i>
-                                <span>Code</span>
+                                <span>{% trans "Code" %}</span>
                             </div>
                             <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
                                 <i class="bi bi-robot"></i>
-                                <span>AI</span>
+                                <span>{% trans "AI" %}</span>
                             </div>
                             <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
                                 <i class="bi bi-lightbulb"></i>
-                                <span>Ideas</span>
+                                <span>{% trans "Ideas" %}</span>
                             </div>
                         </div>
                     </div>
@@ -57,4 +57,27 @@
         </div>
     </div>
 </section>
+
+<!-- Latest posts -->
+{% if latest_posts %}
+<section id="latest-posts" class="section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>{% trans "Latest from the Blog" %}</h2>
+        <p>{% trans "Articles about my projects, Django, SEO and web development." %}</p>
+    </div>
+    <div class="container">
+        <div class="row gy-4">
+            {% for post in latest_posts %}
+            <div class="col-lg-4 col-md-6">
+                <article class="portfolio-card h-100 p-4">
+                    <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.get_absolute_url }}">{% trans "Read more" %} &rarr;</a>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
 {% endblock %}

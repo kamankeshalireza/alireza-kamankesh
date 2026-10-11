@@ -1,0 +1,921 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-09 20:10+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/blog/about.html:4
+msgid "About Alireza Kamankesh | Web Developer & Mobile Repair Specialist"
+msgstr "درباره علیرضا کمانکش | توسعه‌دهنده وب و متخصص تعمیرات موبایل"
+
+#: templates/blog/about.html:5
+msgid ""
+"Learn about Alireza Kamankesh: a Computer Engineering student, Python/Django "
+"web developer and certified mobile phone repair specialist."
+msgstr ""
+"با علیرضا کمانکش آشنا شوید: دانشجوی مهندسی کامپیوتر، توسعه‌دهنده وب با پایتون "
+"و جنگو و متخصص دارای گواهی تعمیرات موبایل."
+
+#: templates/blog/about.html:6
+msgid "Alireza Kamankesh, about, web developer, Django, Python, mobile repair"
+msgstr "علیرضا کمانکش, درباره من, توسعه‌دهنده وب, جنگو, پایتون, تعمیرات موبایل"
+
+#: templates/blog/about.html:14 templates/includes/header.html:8
+msgid "About"
+msgstr "درباره من"
+
+#: templates/blog/about.html:15
+msgid ""
+"Computer Engineering student with a passion for building modern web "
+"applications, working with AI, and solving real-world problems through "
+"technology."
+msgstr ""
+"دانشجوی مهندسی کامپیوتر با علاقه به ساخت اپلیکیشن‌های وب مدرن، کار با هوش "
+"مصنوعی و حل مسائل واقعی با فناوری."
+
+#: templates/blog/about.html:23
+msgid "Hello there"
+msgstr "سلام"
+
+#: templates/blog/about.html:24
+msgid ""
+"Hi, I'm Alireza — a Computer Engineering student building powerful web apps "
+"and AI-driven solutions"
+msgstr ""
+"من علیرضا هستم — دانشجوی مهندسی کامپیوتر که اپلیکیشن‌های وب قدرتمند و "
+"راهکارهای مبتنی بر هوش مصنوعی می‌سازد"
+
+#: templates/blog/about.html:26
+msgid ""
+"I am a Computer Engineering student passionate about web development, "
+"artificial intelligence, and modern tech tools. I have expertise in Python, "
+"JavaScript, HTML/CSS, front-end & back-end development, and professional "
+"mobile phone repair (certified)."
+msgstr ""
+"من دانشجوی مهندسی کامپیوتر هستم و به توسعه وب، هوش مصنوعی و ابزارهای مدرن "
+"فناوری علاقه دارم. در پایتون، جاوااسکریپت، HTML/CSS، توسعه فرانت‌اند و بک‌اند "
+"و همچنین تعمیرات حرفه‌ای موبایل (دارای گواهی) تخصص دارم."
+
+#: templates/blog/about.html:29
+msgid ""
+"I love building e-commerce websites, AI projects, and working with global "
+"development tools. I can deploy projects and build admin panels or cafe menu "
+"systems — delivering complete, production-ready solutions from scratch."
+msgstr ""
+"ساخت فروشگاه‌های اینترنتی و پروژه‌های هوش مصنوعی و کار با ابزارهای جهانی توسعه "
+"را دوست دارم. می‌توانم پروژه‌ها را روی سرور مستقر کنم و پنل مدیریت یا سیستم "
+"منوی کافه بسازم — راهکارهای کامل و آماده‌ی بهره‌برداری، از صفر تا صد."
+
+#: templates/blog/about.html:34 templates/blog/index.html:26
+msgid "View My Work"
+msgstr "مشاهده نمونه‌کارها"
+
+#: templates/blog/about.html:37
+msgid "View Resume"
+msgstr "مشاهده رزومه"
+
+#: templates/blog/about.html:56 templates/blog/about.html:132
+#: templates/blog/about.html:173
+msgid "Python"
+msgstr "پایتون"
+
+#: templates/blog/about.html:57
+msgid ""
+"Backend development, automation, and AI/ML projects using Python and Django."
+msgstr ""
+"توسعه بک‌اند، اتوماسیون و پروژه‌های هوش مصنوعی و یادگیری ماشین با پایتون و "
+"جنگو."
+
+#: templates/blog/about.html:63 templates/blog/about.html:98
+msgid "Web Dev"
+msgstr "توسعه وب"
+
+#: templates/blog/about.html:64
+msgid ""
+"Full-stack development with Django, HTML5, CSS3, JavaScript, and Bootstrap."
+msgstr "توسعه فول‌استک با جنگو، HTML5، CSS3، جاوااسکریپت و بوت‌استرپ."
+
+#: templates/blog/about.html:70
+msgid "AI & Tools"
+msgstr "هوش مصنوعی و ابزارها"
+
+#: templates/blog/about.html:71
+msgid ""
+"Building AI-powered applications and integrating modern AI tools into "
+"projects."
+msgstr ""
+"ساخت اپلیکیشن‌های مبتنی بر هوش مصنوعی و یکپارچه‌سازی ابزارهای مدرن AI در "
+"پروژه‌ها."
+
+#: templates/blog/about.html:77 templates/blog/about.html:250
+msgid "Mobile Repair"
+msgstr "تعمیرات موبایل"
+
+#: templates/blog/about.html:78
+msgid ""
+"Certified professional mobile phone repair specialist with hands-on "
+"experience."
+msgstr "متخصص حرفه‌ای تعمیرات موبایل، دارای گواهی و تجربه عملی."
+
+#: templates/blog/about.html:90
+msgid "Start"
+msgstr "شروع"
+
+#: templates/blog/about.html:91
+msgid "Computer Engineering"
+msgstr "مهندسی کامپیوتر"
+
+#: templates/blog/about.html:92
+msgid ""
+"Began studying Computer Engineering, focusing on software development and "
+"systems."
+msgstr ""
+"شروع تحصیل در رشته مهندسی کامپیوتر با تمرکز بر توسعه نرم‌افزار و سیستم‌ها."
+
+#: templates/blog/about.html:99
+msgid "Full-Stack Projects"
+msgstr "پروژه‌های فول‌استک"
+
+#: templates/blog/about.html:100
+msgid ""
+"Mastered Django and Bootstrap, delivering e-commerce and management systems."
+msgstr ""
+"تسلط بر جنگو و بوت‌استرپ و تحویل فروشگاه‌های اینترنتی و سیستم‌های مدیریتی."
+
+#: templates/blog/about.html:106 templates/blog/index.html:47
+#: templates/blog/portfolio.html:23
+msgid "AI"
+msgstr "هوش مصنوعی"
+
+#: templates/blog/about.html:107
+msgid "AI Development"
+msgstr "توسعه هوش مصنوعی"
+
+#: templates/blog/about.html:108
+msgid ""
+"Built AI-powered chatbots and integrated machine learning into real "
+"applications."
+msgstr ""
+"ساخت چت‌بات‌های مبتنی بر هوش مصنوعی و استفاده از یادگیری ماشین در اپلیکیشن‌های "
+"واقعی."
+
+#: templates/blog/about.html:114
+msgid "Now"
+msgstr "اکنون"
+
+#: templates/blog/about.html:115
+msgid "Certified Repair Tech"
+msgstr "تکنسین دارای گواهی تعمیرات"
+
+#: templates/blog/about.html:116
+msgid ""
+"Obtained professional certification in mobile phone repair alongside "
+"software work."
+msgstr "دریافت گواهی حرفه‌ای تعمیرات موبایل در کنار کار نرم‌افزاری."
+
+#: templates/blog/about.html:124
+msgid ""
+"“Building smart, scalable solutions — from clean code to deployed "
+"applications.”"
+msgstr "«ساخت راهکارهای هوشمند و مقیاس‌پذیر — از کد تمیز تا اپلیکیشن مستقرشده.»"
+
+#: templates/blog/about.html:138
+msgid "AI Projects"
+msgstr "پروژه‌های هوش مصنوعی"
+
+#: templates/blog/about.html:144 templates/blog/portfolio.html:24
+msgid "E-Commerce"
+msgstr "فروشگاه اینترنتی"
+
+#: templates/blog/about.html:150
+msgid "Tech Repair"
+msgstr "تعمیرات فنی"
+
+#: templates/blog/about.html:163
+msgid "Skills"
+msgstr "مهارت‌ها"
+
+#: templates/blog/about.html:164
+msgid ""
+"A versatile skill set spanning full-stack web development, AI integration, "
+"deployment, and certified hardware repair."
+msgstr ""
+"مجموعه‌ای از مهارت‌ها شامل توسعه وب فول‌استک، یکپارچه‌سازی هوش مصنوعی، استقرار "
+"پروژه و تعمیرات سخت‌افزاری دارای گواهی."
+
+#: templates/blog/about.html:174
+msgid "Django, scripting, automation, and AI/ML development."
+msgstr "جنگو، اسکریپت‌نویسی، اتوماسیون و توسعه هوش مصنوعی و یادگیری ماشین."
+
+#: templates/blog/about.html:184
+msgid "HTML5 & CSS3"
+msgstr "HTML5 و CSS3"
+
+#: templates/blog/about.html:185
+msgid "Semantic markup, responsive layouts, and modern CSS."
+msgstr "کدنویسی معنایی، طراحی واکنش‌گرا و CSS مدرن."
+
+#: templates/blog/about.html:195 templates/blog/resume.html:62
+msgid "JavaScript"
+msgstr "جاوااسکریپت"
+
+#: templates/blog/about.html:196
+msgid "Front-end interactivity, DOM manipulation, and APIs."
+msgstr "تعاملی‌سازی فرانت‌اند، کار با DOM و APIها."
+
+#: templates/blog/about.html:206 templates/blog/portfolio.html:68
+msgid "Bootstrap"
+msgstr "بوت‌استرپ"
+
+#: templates/blog/about.html:207
+msgid "Rapid responsive UI development with Bootstrap 5."
+msgstr "توسعه سریع رابط کاربری واکنش‌گرا با بوت‌استرپ ۵."
+
+#: templates/blog/about.html:217
+msgid "Backend Dev"
+msgstr "توسعه بک‌اند"
+
+#: templates/blog/about.html:218
+msgid "Django REST, admin panels, databases, and server-side logic."
+msgstr "جنگو REST، پنل‌های مدیریت، پایگاه داده و منطق سمت سرور."
+
+#: templates/blog/about.html:228 templates/blog/resume.html:76
+msgid "AI & AI Tools"
+msgstr "هوش مصنوعی و ابزارهای آن"
+
+#: templates/blog/about.html:229
+msgid "Chatbots, AI integration, and working with modern AI platforms."
+msgstr "چت‌بات، یکپارچه‌سازی هوش مصنوعی و کار با پلتفرم‌های مدرن AI."
+
+#: templates/blog/about.html:239 templates/blog/resume.html:69
+#: templates/blog/services.html:92
+msgid "Deployment & Hosting"
+msgstr "استقرار و هاستینگ"
+
+#: templates/blog/about.html:240
+msgid "Deploying projects to production servers and cloud platforms."
+msgstr "استقرار پروژه‌ها روی سرورهای عملیاتی و پلتفرم‌های ابری."
+
+#: templates/blog/about.html:251
+msgid "Certified professional repair for smartphones and mobile devices."
+msgstr "تعمیرات حرفه‌ای و دارای گواهی گوشی‌های هوشمند و دستگاه‌های موبایل."
+
+#: templates/blog/about.html:284
+msgid "Skills Mastered"
+msgstr "مهارت تخصصی"
+
+#: templates/blog/about.html:289
+msgid "Projects Completed"
+msgstr "پروژه انجام‌شده"
+
+#: templates/blog/about.html:294
+msgid "Certified Specialist"
+msgstr "متخصص دارای گواهی"
+
+#: templates/blog/contact.html:4
+msgid "Contact Alireza Kamankesh | Hire a Django Developer"
+msgstr "تماس با علیرضا کمانکش | استخدام توسعه‌دهنده جنگو"
+
+#: templates/blog/contact.html:5
+msgid ""
+"Get in touch with Alireza Kamankesh for freelance web development, "
+"collaborations and full-time opportunities."
+msgstr ""
+"برای پروژه‌های فریلنسری توسعه وب، همکاری و فرصت‌های شغلی تمام‌وقت با علیرضا "
+"کمانکش در تماس باشید."
+
+#: templates/blog/contact.html:6
+msgid ""
+"contact Alireza Kamankesh, hire Django developer, freelance web developer"
+msgstr "تماس با علیرضا کمانکش, استخدام برنامه‌نویس جنگو, توسعه‌دهنده وب فریلنسر"
+
+#: templates/blog/contact.html:14 templates/includes/header.html:13
+msgid "Contact"
+msgstr "تماس"
+
+#: templates/blog/contact.html:15
+msgid ""
+"Have a project in mind or want to collaborate? Feel free to reach out — I'd "
+"love to hear from you."
+msgstr ""
+"پروژه‌ای در ذهن دارید یا می‌خواهید همکاری کنیم؟ راحت پیام بدهید — خوشحال می‌شوم "
+"از شما بشنوم."
+
+#: templates/blog/contact.html:23
+msgid "Contact Info"
+msgstr "اطلاعات تماس"
+
+#: templates/blog/contact.html:24
+msgid ""
+"I'm open to freelance projects, collaborations, and full-time opportunities. "
+"Don't hesitate to get in touch!"
+msgstr ""
+"آماده‌ی پروژه‌های فریلنسری، همکاری و فرصت‌های شغلی تمام‌وقت هستم. در تماس با من "
+"تردید نکنید!"
+
+#: templates/blog/contact.html:31
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: templates/blog/contact.html:41
+msgid "LinkedIn"
+msgstr "لینکدین"
+
+#: templates/blog/contact.html:51
+msgid "GitHub"
+msgstr "گیت‌هاب"
+
+#: templates/blog/contact.html:60 templates/blog/index.html:27
+msgid "Get In Touch"
+msgstr "ارتباط با من"
+
+#: templates/blog/contact.html:61
+msgid "Fill out the form below and I'll get back to you as soon as possible."
+msgstr "فرم زیر را پر کنید؛ در اسرع وقت پاسخ می‌دهم."
+
+#: templates/blog/contact.html:65
+msgid "Your message has been sent. Thank you!"
+msgstr "پیام شما ارسال شد. سپاسگزارم!"
+
+#: templates/blog/contact.html:66
+msgid "Please check the form fields and try again."
+msgstr "لطفاً فیلدهای فرم را بررسی کنید و دوباره تلاش کنید."
+
+#: templates/blog/contact.html:70
+msgid "Your Name"
+msgstr "نام شما"
+
+#: templates/blog/contact.html:74
+msgid "Your Email"
+msgstr "ایمیل شما"
+
+#: templates/blog/contact.html:78
+msgid "Subject"
+msgstr "موضوع"
+
+#: templates/blog/contact.html:82
+msgid "Message"
+msgstr "پیام"
+
+#: templates/blog/contact.html:86
+msgid "Send Message"
+msgstr "ارسال پیام"
+
+#: templates/blog/index.html:4
+msgid "Alireza Kamankesh | Web Developer & Mobile Repair Specialist"
+msgstr "علیرضا کمانکش | توسعه‌دهنده وب (پایتون و جنگو) و متخصص تعمیرات موبایل"
+
+#: templates/blog/index.html:5
+msgid ""
+"Alireza Kamankesh is a Computer Engineering student and Django/Python web "
+"developer. I build e-commerce websites, AI projects and full-stack "
+"applications."
+msgstr ""
+"علیرضا کمانکش، دانشجوی مهندسی کامپیوتر و توسعه‌دهنده وب با پایتون و جنگو. "
+"طراحی و ساخت فروشگاه اینترنتی، پروژه‌های هوش مصنوعی و اپلیکیشن‌های فول‌استک."
+
+#: templates/blog/index.html:6
+msgid ""
+"web developer, python, django, frontend, backend, mobile repair, alireza "
+"kamankesh"
+msgstr ""
+"علیرضا کمانکش, توسعه‌دهنده وب, برنامه‌نویس پایتون, جنگو, فرانت‌اند, بک‌اند, "
+"تعمیرات موبایل"
+
+#: templates/blog/index.html:8
+msgid "Alireza Kamankesh | Creative Web Developer"
+msgstr "علیرضا کمانکش | توسعه‌دهنده خلاق وب"
+
+#: templates/blog/index.html:9
+msgid ""
+"Turning ideas into reality with Python, Django, and modern web technologies."
+msgstr "تبدیل ایده به واقعیت با پایتون، جنگو و فناوری‌های مدرن وب."
+
+#: templates/blog/index.html:18
+msgid "Hello, I'm"
+msgstr "سلام، من"
+
+#: templates/blog/index.html:18 templates/blog/post_detail.html:4
+#: templates/blog/post_detail.html:39 templates/includes/footer.html:5
+#: templates/includes/footer.html:13
+msgid "Alireza Kamankesh"
+msgstr "علیرضا کمانکش"
+
+#: templates/blog/index.html:20
+msgid ""
+"Web Developer, Python Developer, Backend Developer, Frontend Developer, "
+"Mobile Repair Specialist"
+msgstr ""
+"توسعه‌دهنده وب, برنامه‌نویس پایتون, توسعه‌دهنده بک‌اند, توسعه‌دهنده فرانت‌اند, "
+"متخصص تعمیرات موبایل"
+
+#: templates/blog/index.html:23
+msgid ""
+"I am a Computer Engineering student passionate about web development, "
+"artificial intelligence, and modern tech tools. I build e-commerce websites, "
+"AI projects, and deploy full-stack applications with admin panels and custom "
+"management systems."
+msgstr ""
+"من دانشجوی مهندسی کامپیوتر هستم و به توسعه وب، هوش مصنوعی و ابزارهای مدرن "
+"علاقه دارم. فروشگاه اینترنتی و پروژه‌های هوش مصنوعی می‌سازم و اپلیکیشن‌های "
+"فول‌استک را با پنل مدیریت و سیستم‌های مدیریتی سفارشی مستقر می‌کنم."
+
+#: templates/blog/index.html:43
+msgid "Code"
+msgstr "کد"
+
+#: templates/blog/index.html:51
+msgid "Ideas"
+msgstr "ایده"
+
+#: templates/blog/index.html:65
+msgid "Latest from the Blog"
+msgstr "تازه‌ترین مطالب وبلاگ"
+
+#: templates/blog/index.html:66 templates/blog/post_list.html:13
+msgid "Articles about my projects, Django, SEO and web development."
+msgstr "مقاله‌هایی درباره پروژه‌هایم، جنگو، سئو و توسعه وب."
+
+#: templates/blog/index.html:75 templates/blog/post_list.html:24
+msgid "Read more"
+msgstr "ادامه مطلب"
+
+#: templates/blog/portfolio.html:4
+msgid "Portfolio | Projects by Alireza Kamankesh"
+msgstr "نمونه‌کارها | پروژه‌های علیرضا کمانکش"
+
+#: templates/blog/portfolio.html:5
+msgid ""
+"Selected projects by Alireza Kamankesh: Django e-commerce and corporate "
+"sites, cafe menu system, Telegram bot and web scraper."
+msgstr ""
+"منتخب پروژه‌های علیرضا کمانکش: فروشگاه و سایت شرکتی با جنگو، سیستم منوی کافه، "
+"ربات تلگرام و وب اسکرپر."
+
+#: templates/blog/portfolio.html:6
+msgid ""
+"Alireza Kamankesh portfolio, Django projects, Telegram bot, web scraper, "
+"cafe menu"
+msgstr ""
+"نمونه‌کار علیرضا کمانکش, پروژه‌های جنگو, ربات تلگرام, وب اسکرپر, منوی کافه"
+
+#: templates/blog/portfolio.html:14 templates/blog/portfolio.html:26
+#: templates/includes/header.html:11
+msgid "Portfolio"
+msgstr "نمونه‌کارها"
+
+#: templates/blog/portfolio.html:15
+msgid ""
+"A selection of projects showcasing my skills in web development, AI, and "
+"full-stack deployment."
+msgstr ""
+"مجموعه‌ای از پروژه‌ها که مهارت‌های من در توسعه وب، هوش مصنوعی و استقرار فول‌استک "
+"را نشان می‌دهد."
+
+#: templates/blog/portfolio.html:22
+msgid "All"
+msgstr "همه"
+
+#: templates/blog/portfolio.html:25 templates/blog/portfolio.html:47
+msgid "Management"
+msgstr "مدیریت"
+
+#: templates/blog/portfolio.html:27
+msgid "Automation"
+msgstr "اتوماسیون"
+
+#: templates/blog/portfolio.html:44 templates/blog/resume.html:114
+msgid "Cafe Menu Management System"
+msgstr "سیستم مدیریت منوی کافه"
+
+#: templates/blog/portfolio.html:45
+msgid "Full management system with live deployment"
+msgstr "سیستم مدیریت کامل با استقرار روی سرور"
+
+#: templates/blog/portfolio.html:48
+msgid "Deployment"
+msgstr "استقرار"
+
+#: templates/blog/portfolio.html:64
+msgid "Personal Portfolio Website"
+msgstr "وب‌سایت شخصی و نمونه‌کار"
+
+#: templates/blog/portfolio.html:65
+msgid "This website — built with Django & FolioOne"
+msgstr "همین وب‌سایت — ساخته‌شده با جنگو و FolioOne"
+
+#: templates/blog/portfolio.html:67
+msgid "Django"
+msgstr "جنگو"
+
+#: templates/blog/portfolio.html:77
+msgid "novinsanatfelez.com website"
+msgstr "وب‌سایت novinsanatfelez.com"
+
+#: templates/blog/portfolio.html:84
+msgid "Novin Sanat Felez - Metal Art Store"
+msgstr "نوین صنعت فلز — فروشگاه هنر فلز"
+
+#: templates/blog/portfolio.html:85
+msgid ""
+"Persian (RTL) Django website for selling metal art and decorative products, "
+"with SEO and mobile-first design"
+msgstr ""
+"وب‌سایت فارسی (راست‌به‌چپ) با جنگو برای فروش آثار هنری فلزی و محصولات دکوراتیو، "
+"با سئو و طراحی موبایل‌محور"
+
+#: templates/blog/portfolio.html:98
+msgid "Instagram downloader Telegram bot"
+msgstr "ربات تلگرام دانلودر اینستاگرام"
+
+#: templates/blog/portfolio.html:105
+msgid "Instagram Downloader Telegram Bot"
+msgstr "ربات تلگرام دانلودر اینستاگرام"
+
+#: templates/blog/portfolio.html:106
+msgid ""
+"Telegram bot written in Python that downloads Instagram content for users"
+msgstr ""
+"ربات تلگرامی نوشته‌شده با پایتون که محتوای اینستاگرام را برای کاربران دانلود "
+"می‌کند"
+
+#: templates/blog/portfolio.html:119
+msgid "E-commerce scraper"
+msgstr "اسکرپر فروشگاه اینترنتی"
+
+#: templates/blog/portfolio.html:126
+msgid "E-Commerce Web Scraper"
+msgstr "وب اسکرپر فروشگاه اینترنتی"
+
+#: templates/blog/portfolio.html:127
+msgid "Python tool that collects product data from online stores"
+msgstr "ابزار پایتونی برای جمع‌آوری اطلاعات محصولات از فروشگاه‌های آنلاین"
+
+#: templates/blog/portfolio.html:141
+msgid "View All on GitHub"
+msgstr "مشاهده همه در گیت‌هاب"
+
+#: templates/blog/post_detail.html:36 templates/blog/post_list.html:12
+#: templates/includes/header.html:12
+msgid "Blog"
+msgstr "وبلاگ"
+
+#: templates/blog/post_list.html:4
+msgid "Blog | Alireza Kamankesh - Django, Python & Web Development"
+msgstr "وبلاگ علیرضا کمانکش | جنگو، پایتون و توسعه وب"
+
+#: templates/blog/post_list.html:5
+msgid ""
+"Articles by Alireza Kamankesh about Django, Python, SEO and building real-"
+"world web projects."
+msgstr ""
+"مقاله‌های علیرضا کمانکش درباره جنگو، پایتون، سئو و ساخت پروژه‌های واقعی وب."
+
+#: templates/blog/post_list.html:6
+msgid "Alireza Kamankesh blog, Django tutorials, Python, SEO, web development"
+msgstr "وبلاگ علیرضا کمانکش, آموزش جنگو, پایتون, سئو, توسعه وب"
+
+#: templates/blog/post_list.html:28
+msgid "No posts yet. Please check back soon."
+msgstr "هنوز مطلبی منتشر نشده است. به‌زودی دوباره سر بزنید."
+
+#: templates/blog/resume.html:4
+msgid "Resume | Alireza Kamankesh - Django & Python Developer"
+msgstr "رزومه | علیرضا کمانکش — توسعه‌دهنده جنگو و پایتون"
+
+#: templates/blog/resume.html:5
+msgid ""
+"Resume of Alireza Kamankesh: education, technical skills (Python, Django, "
+"JavaScript, Bootstrap) and project experience."
+msgstr ""
+"رزومه علیرضا کمانکش: تحصیلات، مهارت‌های فنی (پایتون، جنگو، جاوااسکریپت، "
+"بوت‌استرپ) و سوابق پروژه‌ای."
+
+#: templates/blog/resume.html:6
+msgid ""
+"Alireza Kamankesh resume, Django developer, Python developer, computer "
+"engineering"
+msgstr ""
+"رزومه علیرضا کمانکش, برنامه‌نویس جنگو, برنامه‌نویس پایتون, مهندسی کامپیوتر"
+
+#: templates/blog/resume.html:14 templates/includes/header.html:9
+msgid "Resume"
+msgstr "رزومه"
+
+#: templates/blog/resume.html:15
+msgid ""
+"My educational background, technical skills, and hands-on project experience "
+"as a Computer Engineering student and developer."
+msgstr ""
+"سوابق تحصیلی، مهارت‌های فنی و تجربه عملی پروژه‌ای من به‌عنوان دانشجوی مهندسی "
+"کامپیوتر و توسعه‌دهنده."
+
+#: templates/blog/resume.html:24
+msgid "Education"
+msgstr "تحصیلات"
+
+#: templates/blog/resume.html:28
+msgid "Bachelor of Computer Engineering"
+msgstr "کارشناسی مهندسی کامپیوتر"
+
+#: templates/blog/resume.html:29
+msgid "Current"
+msgstr "در حال تحصیل"
+
+#: templates/blog/resume.html:30
+msgid "University — Computer Engineering Program"
+msgstr "دانشگاه — رشته مهندسی کامپیوتر"
+
+#: templates/blog/resume.html:31
+msgid ""
+"Studying core computer engineering topics including software development, "
+"algorithms, data structures, operating systems, and modern programming "
+"paradigms."
+msgstr ""
+"مطالعه مباحث اصلی مهندسی کامپیوتر شامل توسعه نرم‌افزار، الگوریتم‌ها، ساختمان "
+"داده، سیستم‌عامل و الگوهای مدرن برنامه‌نویسی."
+
+#: templates/blog/resume.html:35
+msgid "Mobile Phone Repair Certification"
+msgstr "گواهی تعمیرات موبایل"
+
+#: templates/blog/resume.html:36
+msgid "Certified"
+msgstr "دارای گواهی"
+
+#: templates/blog/resume.html:37
+msgid "Professional Certification Program"
+msgstr "دوره گواهی حرفه‌ای"
+
+#: templates/blog/resume.html:38
+msgid ""
+"Obtained a professional certification in mobile phone hardware repair, "
+"covering diagnostics, component replacement, and device restoration for "
+"major smartphone brands."
+msgstr ""
+"دریافت گواهی حرفه‌ای تعمیرات سخت‌افزار موبایل شامل عیب‌یابی، تعویض قطعات و "
+"بازیابی دستگاه برای برندهای اصلی گوشی هوشمند."
+
+#: templates/blog/resume.html:44
+msgid "Technical Skills"
+msgstr "مهارت‌های فنی"
+
+#: templates/blog/resume.html:48
+msgid "Python & Django"
+msgstr "پایتون و جنگو"
+
+#: templates/blog/resume.html:55
+msgid "HTML5, CSS3 & Bootstrap"
+msgstr "HTML5، CSS3 و بوت‌استرپ"
+
+#: templates/blog/resume.html:87
+msgid "Projects & Experience"
+msgstr "پروژه‌ها و تجربیات"
+
+#: templates/blog/resume.html:91
+msgid "AI-Powered Chatbot"
+msgstr "چت‌بات مبتنی بر هوش مصنوعی"
+
+#: templates/blog/resume.html:92
+msgid "Python Project"
+msgstr "پروژه پایتون"
+
+#: templates/blog/resume.html:93
+msgid "Personal Project"
+msgstr "پروژه شخصی"
+
+#: templates/blog/resume.html:95
+msgid "Built an intelligent conversational chatbot using Python and AI APIs"
+msgstr "ساخت یک چت‌بات هوشمند با پایتون و APIهای هوش مصنوعی"
+
+#: templates/blog/resume.html:96
+msgid "Implemented natural language processing for context-aware responses"
+msgstr "پیاده‌سازی پردازش زبان طبیعی برای پاسخ‌های متناسب با زمینه گفتگو"
+
+#: templates/blog/resume.html:97
+msgid "Designed and deployed the chatbot for real-world user interaction"
+msgstr "طراحی و استقرار چت‌بات برای تعامل واقعی با کاربران"
+
+#: templates/blog/resume.html:102
+msgid "Full E-Commerce Website"
+msgstr "فروشگاه اینترنتی کامل"
+
+#: templates/blog/resume.html:103
+msgid "Django + Bootstrap"
+msgstr "جنگو + بوت‌استرپ"
+
+#: templates/blog/resume.html:104
+msgid "Client / Freelance Project"
+msgstr "پروژه مشتری / فریلنسری"
+
+#: templates/blog/resume.html:106
+msgid ""
+"Developed a complete online store with product listings, cart, and checkout"
+msgstr "توسعه فروشگاه آنلاین کامل با لیست محصولات، سبد خرید و پرداخت"
+
+#: templates/blog/resume.html:107
+msgid "Built a custom Django admin panel for inventory and order management"
+msgstr "ساخت پنل مدیریت سفارشی جنگو برای مدیریت موجودی و سفارش‌ها"
+
+#: templates/blog/resume.html:108
+msgid "Integrated Bootstrap 5 for a fully responsive front-end design"
+msgstr "استفاده از بوت‌استرپ ۵ برای طراحی فرانت‌اند کاملاً واکنش‌گرا"
+
+#: templates/blog/resume.html:109
+msgid "Handled deployment and hosting on a live production server"
+msgstr "استقرار و هاستینگ پروژه روی سرور عملیاتی"
+
+#: templates/blog/resume.html:115
+msgid "Django + Deployment"
+msgstr "جنگو + استقرار"
+
+#: templates/blog/resume.html:116
+msgid "Client Project"
+msgstr "پروژه مشتری"
+
+#: templates/blog/resume.html:118
+msgid "Designed a full menu management system for a cafe business"
+msgstr "طراحی سیستم کامل مدیریت منو برای یک کافه"
+
+#: templates/blog/resume.html:119
+msgid "Built an admin panel for easy item addition, editing, and removal"
+msgstr "ساخت پنل مدیریت برای افزودن، ویرایش و حذف آسان آیتم‌ها"
+
+#: templates/blog/resume.html:120
+msgid "Deployed the application to a live server for ongoing client use"
+msgstr "استقرار برنامه روی سرور واقعی برای استفاده مستمر مشتری"
+
+#: templates/blog/resume.html:125
+msgid "Certified Mobile Phone Repair"
+msgstr "تعمیرات دارای گواهی موبایل"
+
+#: templates/blog/resume.html:126
+msgid "Professional Service"
+msgstr "خدمات حرفه‌ای"
+
+#: templates/blog/resume.html:127
+msgid "Independent Specialist"
+msgstr "متخصص مستقل"
+
+#: templates/blog/resume.html:129
+msgid "Provide certified repair services for smartphones and mobile devices"
+msgstr "ارائه خدمات تعمیر دارای گواهی برای گوشی‌های هوشمند و دستگاه‌های موبایل"
+
+#: templates/blog/resume.html:130
+msgid "Perform hardware diagnostics, screen replacement, and component repair"
+msgstr "عیب‌یابی سخت‌افزاری، تعویض صفحه‌نمایش و تعمیر قطعات"
+
+#: templates/blog/resume.html:131
+msgid "Serve individual clients with professional, reliable turnaround"
+msgstr "خدمت‌رسانی به مشتریان با تحویل حرفه‌ای و قابل‌اعتماد"
+
+#: templates/blog/services.html:4
+msgid "Services | Web Development, Django & Deployment - Alireza Kamankesh"
+msgstr "خدمات | توسعه وب، جنگو و استقرار — علیرضا کمانکش"
+
+#: templates/blog/services.html:5
+msgid ""
+"Professional services by Alireza Kamankesh: e-commerce websites, Django web "
+"apps, admin panels, AI chatbots, deployment and certified mobile repair."
+msgstr ""
+"خدمات حرفه‌ای علیرضا کمانکش: ساخت فروشگاه اینترنتی، اپلیکیشن وب با جنگو، پنل "
+"مدیریت، چت‌بات هوش مصنوعی، استقرار پروژه و تعمیرات دارای گواهی موبایل."
+
+#: templates/blog/services.html:6
+msgid ""
+"web development services, Django, e-commerce website, deployment, mobile "
+"repair"
+msgstr ""
+"خدمات توسعه وب, جنگو, طراحی فروشگاه اینترنتی, استقرار پروژه, تعمیرات موبایل"
+
+#: templates/blog/services.html:14 templates/includes/header.html:10
+msgid "Services"
+msgstr "خدمات"
+
+#: templates/blog/services.html:15
+msgid ""
+"I offer a range of professional services — from full-stack web development "
+"to AI integration and certified mobile phone repair."
+msgstr ""
+"مجموعه‌ای از خدمات حرفه‌ای ارائه می‌دهم — از توسعه وب فول‌استک تا یکپارچه‌سازی "
+"هوش مصنوعی و تعمیرات دارای گواهی موبایل."
+
+#: templates/blog/services.html:28
+msgid "E-Commerce Website Development"
+msgstr "طراحی و توسعه فروشگاه اینترنتی"
+
+#: templates/blog/services.html:29
+msgid ""
+"I build complete, production-ready e-commerce websites using Django and "
+"Bootstrap 5. This includes product management, shopping cart, checkout flow, "
+"admin dashboard, and full deployment to a live server."
+msgstr ""
+"فروشگاه‌های اینترنتی کامل و آماده‌ی بهره‌برداری با جنگو و بوت‌استرپ ۵ می‌سازم؛ "
+"شامل مدیریت محصولات، سبد خرید، فرایند پرداخت، داشبورد مدیریت و استقرار کامل "
+"روی سرور."
+
+#: templates/blog/services.html:31 templates/blog/services.html:47
+#: templates/blog/services.html:63 templates/blog/services.html:79
+#: templates/blog/services.html:95
+msgid "Get a Quote"
+msgstr "درخواست قیمت"
+
+#: templates/blog/services.html:44
+msgid "AI-Powered Applications"
+msgstr "اپلیکیشن‌های مبتنی بر هوش مصنوعی"
+
+#: templates/blog/services.html:45
+msgid ""
+"I develop AI-integrated web applications and chatbots using Python. Whether "
+"you need a customer support bot, an AI-driven tool, or smart automation "
+"built into your website — I can deliver it."
+msgstr ""
+"اپلیکیشن‌های وب و چت‌بات‌های مجهز به هوش مصنوعی را با پایتون توسعه می‌دهم. چه "
+"ربات پشتیبانی مشتری بخواهید، چه ابزار مبتنی بر AI یا اتوماسیون هوشمند در "
+"وب‌سایت‌تان — می‌توانم تحویل بدهم."
+
+#: templates/blog/services.html:60
+msgid "Admin Panels & Management Systems"
+msgstr "پنل مدیریت و سیستم‌های مدیریتی"
+
+#: templates/blog/services.html:61
+msgid ""
+"I build custom admin panels and management systems tailored to your business "
+"— including cafe menu systems, inventory tools, and content management "
+"dashboards with user-friendly interfaces."
+msgstr ""
+"پنل‌های مدیریت و سیستم‌های مدیریتی سفارشی متناسب با کسب‌وکار شما می‌سازم — از "
+"جمله سیستم منوی کافه، ابزار انبارداری و داشبورد مدیریت محتوا با رابط کاربری "
+"ساده."
+
+#: templates/blog/services.html:76
+msgid "Front-End & Back-End Development"
+msgstr "توسعه فرانت‌اند و بک‌اند"
+
+#: templates/blog/services.html:77
+msgid ""
+"I handle both sides of the stack — responsive, modern front-ends with HTML5, "
+"CSS3, JavaScript, and Bootstrap, combined with powerful back-ends using "
+"Python and Django with database integration."
+msgstr ""
+"هر دو سمت پروژه را انجام می‌دهم — فرانت‌اند مدرن و واکنش‌گرا با HTML5، CSS3، "
+"جاوااسکریپت و بوت‌استرپ، همراه با بک‌اند قدرتمند با پایتون و جنگو و اتصال به "
+"پایگاه داده."
+
+#: templates/blog/services.html:93
+msgid ""
+"I deploy your web project to a live production server so it's accessible to "
+"the world. I handle server configuration, domain setup, environment "
+"variables, and ensure your app runs smoothly online."
+msgstr ""
+"پروژه وب شما را روی سرور واقعی مستقر می‌کنم تا در دسترس همه باشد. تنظیمات "
+"سرور، اتصال دامنه و متغیرهای محیطی را انجام می‌دهم و از عملکرد روان برنامه "
+"آنلاین اطمینان حاصل می‌کنم."
+
+#: templates/blog/services.html:108
+msgid "Mobile Phone Repair (Certified)"
+msgstr "تعمیرات موبایل (دارای گواهی)"
+
+#: templates/blog/services.html:109
+msgid ""
+"I provide certified professional repair services for smartphones — including "
+"screen replacement, battery replacement, charging port repair, software "
+"issues, and hardware diagnostics for all major brands."
+msgstr ""
+"خدمات تعمیرات حرفه‌ای و دارای گواهی گوشی‌های هوشمند — شامل تعویض صفحه‌نمایش، "
+"تعویض باتری، تعمیر پورت شارژ، مشکلات نرم‌افزاری و عیب‌یابی سخت‌افزاری برای همه "
+"برندهای اصلی."
+
+#: templates/blog/services.html:111
+msgid "Book a Repair"
+msgstr "رزرو تعمیر"
+
+#: templates/includes/footer.html:5
+msgid "Copyright"
+msgstr "حق نشر"
+
+#: templates/includes/footer.html:5
+msgid "All Rights Reserved"
+msgstr "تمامی حقوق محفوظ است"
+
+#: templates/includes/footer.html:13
+msgid "Developed by"
+msgstr "توسعه‌یافته توسط"
+
+#: templates/includes/header.html:7
+msgid "Home"
+msgstr "خانه"

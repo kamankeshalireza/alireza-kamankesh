@@ -1,0 +1,14 @@
+/* Persian / RTL overrides */
+html[dir="rtl"] body,
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3,
+html[dir="rtl"] h4, html[dir="rtl"] h5, html[dir="rtl"] h6,
+html[dir="rtl"] .navmenu a, html[dir="rtl"] .btn {
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+}
+html[dir="rtl"] .navmenu ul { padding-right: 0; }
+html[dir="rtl"] .lang-switch { margin-right: 0; margin-left: 12px; }
+.lang-switch a {
+  display: inline-block; padding: 2px 10px; border: 1px solid currentColor;
+  border-radius: 14px; font-size: 13px; text-decoration: none; opacity: .85;
+}
+.lang-switch a:hover { opacity: 1; }

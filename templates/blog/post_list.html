@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Blog | Alireza Kamankesh - Django, Python & Web Development" %}{% endblock %}
+{% block meta_description %}{% trans "Articles by Alireza Kamankesh about Django, Python, SEO and building real-world web projects." %}{% endblock %}
+{% block meta_keywords %}{% trans "Alireza Kamankesh blog, Django tutorials, Python, SEO, web development" %}{% endblock %}
+{% block body_class %}blog-page{% endblock %}
+
+{% block content %}
+<section id="blog" class="section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>{% trans "Blog" %}</h2>
+        <p>{% trans "Articles about my projects, Django, SEO and web development." %}</p>
+    </div>
+    <div class="container">
+        <div class="row gy-4">
+            {% for post in posts %}
+            <div class="col-lg-4 col-md-6">
+                <article class="portfolio-card h-100 p-4">
+                    {% if post.cover_image %}<img src="{{ post.cover_image.url }}" alt="{{ post.title }}" class="img-fluid mb-3" loading="lazy">{% endif %}
+                    <small>{{ post.published_at|date:"Y/m/d" }}</small>
+                    <h3 class="h4 mt-2"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.get_absolute_url }}">{% trans "Read more" %} &rarr;</a>
+                </article>
+            </div>
+            {% empty %}
+            <p class="text-center">{% trans "No posts yet. Please check back soon." %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

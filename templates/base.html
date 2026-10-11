@@ -1,6 +1,6 @@
-{% load static %}
+{% load static i18n %}{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,22 +9,25 @@
     <title>{% block title %}Alireza Kamankesh | Web Developer{% endblock %}</title>
     <meta name="description" content="{% block meta_description %}Alireza Kamankesh is a Computer Engineering Student and Web Developer specializing in Python, Django, and Full-Stack Development.{% endblock %}" />
     <meta name="keywords" content="{% block meta_keywords %}Alireza Kamankesh, Web Developer, Django, Python, Backend Developer, Mobile Repair{% endblock %}" />
-    <meta name="author" content="Alireza Kamankesh" />
+    <meta name="author" content="{% if LANGUAGE_CODE == 'fa' %}علیرضا کمانکش{% else %}Alireza Kamankesh{% endif %}" />
     
     {% block canonical %}
-    <link rel="canonical" href="https://yourdomain.com{{ request.path }}" />
+    <link rel="canonical" href="{{ SITE_URL }}{{ request.path }}" />
     {% endblock %}
+    {% for code, url in ALT_LANG_URLS %}<link rel="alternate" hreflang="{{ code }}" href="{{ SITE_URL }}{{ url }}" />
+    {% endfor %}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourdomain.com{{ request.path }}" />
+    <meta property="og:locale" content="{% if LANGUAGE_CODE == 'fa' %}fa_IR{% else %}en_US{% endif %}" />
+    <meta property="og:url" content="{{ SITE_URL }}{{ request.path }}" />
     <meta property="og:title" content="{% block og_title %}Alireza Kamankesh | Web Developer{% endblock %}" />
     <meta property="og:description" content="{% block og_description %}Computer Engineering Student passionate about web development and AI.{% endblock %}" />
     <meta property="og:image" content="{% static 'assets/img/profile/profile-square-11.png' %}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://yourdomain.com{{ request.path }}" />
+    <meta property="twitter:url" content="{{ SITE_URL }}{{ request.path }}" />
     <meta property="twitter:title" content="{% block twitter_title %}Alireza Kamankesh | Web Developer{% endblock %}" />
     <meta property="twitter:description" content="{% block twitter_description %}Full-stack developer specializing in Django and Python.{% endblock %}" />
     <meta property="twitter:image" content="{% static 'assets/img/profile/profile-square-11.png' %}" />
@@ -39,7 +42,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
-    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    {% if LANGUAGE_BIDI %}<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.rtl.min.css' %}" rel="stylesheet" />{% else %}<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />{% endif %}
     <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
     <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet" />
     <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
@@ -47,6 +50,8 @@
 
     <!-- Main CSS File -->
     <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" />
+    {% if LANGUAGE_BIDI %}<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="{% static 'assets/css/rtl.css' %}" rel="stylesheet" />{% endif %}
 
     {% block extra_head %}{% endblock %}
     
@@ -56,10 +61,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Alireza Kamankesh",
-      "url": "https://yourdomain.com/",
-      "image": "https://yourdomain.com{% static 'assets/img/profile/profile-square-11.webp' %}",
-      "jobTitle": "Web Developer",
+      "name": "{% if LANGUAGE_CODE == 'fa' %}علیرضا کمانکش{% else %}Alireza Kamankesh{% endif %}",
+      "alternateName": ["Alireza Kamankesh", "علیرضا کمانکش"],
+      "url": "{{ SITE_URL }}{% url 'blog:index' %}",
+      "image": "{{ SITE_URL }}{% static 'assets/img/profile/profile-square-11.webp' %}",
+      "jobTitle": "{% if LANGUAGE_CODE == 'fa' %}توسعه‌دهنده وب{% else %}Web Developer{% endif %}",
       "sameAs": [
         "https://github.com/kamankeshalireza",
         "https://www.linkedin.com/in/alireza-kamankesh"

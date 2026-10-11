@@ -2853,3 +2853,9 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* language switcher (all languages) */
+.lang-switch a {
+  display: inline-block; padding: 2px 10px; border: 1px solid currentColor;
+  border-radius: 14px; font-size: 13px; text-decoration: none; opacity: .85;
+}
+.lang-switch a:hover { opacity: 1; }

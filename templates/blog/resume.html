@@ -1,62 +1,18 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static i18n %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - Alireza Kamankesh</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+{% block title %}{% trans "Resume | Alireza Kamankesh - Django & Python Developer" %}{% endblock %}
+{% block meta_description %}{% trans "Resume of Alireza Kamankesh: education, technical skills (Python, Django, JavaScript, Bootstrap) and project experience." %}{% endblock %}
+{% block meta_keywords %}{% trans "Alireza Kamankesh resume, Django developer, Python developer, computer engineering" %}{% endblock %}
+{% block body_class %}resume-page{% endblock %}
 
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
-
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-</head>
-
-<body class="resume-page">
-
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="{% url 'blog:index' %}">Home</a></li>
-          <li><a href="{% url 'blog:about' %}">About</a></li>
-          <li><a href="{% url 'blog:resume' %}" class="active">Resume</a></li>
-          <li><a href="{% url 'blog:services' %}">Services</a></li>
-          <li><a href="{% url 'blog:portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog:contact' %}">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://github.com/kamankeshalireza" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/alireza-kamankesh" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="mailto:kamankeshalireza30@gmail.com"><i class="bi bi-envelope"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
+{% block content %}
 
     <section id="resume" class="resume section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>My educational background, technical skills, and hands-on project experience as a Computer Engineering student and developer.</p>
+        <h2>{% trans "Resume" %}</h2>
+        <p>{% trans "My educational background, technical skills, and hands-on project experience as a Computer Engineering student and developer." %}</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -65,59 +21,59 @@
           <div class="col-lg-6">
 
             <div class="resume-item" data-aos="fade-up">
-              <h3 class="resume-title">Education</h3>
+              <h3 class="resume-title">{% trans "Education" %}</h3>
 
               <div class="resume-content">
                 <article class="education-item">
-                  <h4>Bachelor of Computer Engineering</h4>
-                  <h5>Current</h5>
-                  <p class="institution"><em>University — Computer Engineering Program</em></p>
-                  <p>Studying core computer engineering topics including software development, algorithms, data structures, operating systems, and modern programming paradigms.</p>
+                  <h4>{% trans "Bachelor of Computer Engineering" %}</h4>
+                  <h5>{% trans "Current" %}</h5>
+                  <p class="institution"><em>{% trans "University — Computer Engineering Program" %}</em></p>
+                  <p>{% trans "Studying core computer engineering topics including software development, algorithms, data structures, operating systems, and modern programming paradigms." %}</p>
                 </article>
 
                 <article class="education-item">
-                  <h4>Mobile Phone Repair Certification</h4>
-                  <h5>Certified</h5>
-                  <p class="institution"><em>Professional Certification Program</em></p>
-                  <p>Obtained a professional certification in mobile phone hardware repair, covering diagnostics, component replacement, and device restoration for major smartphone brands.</p>
+                  <h4>{% trans "Mobile Phone Repair Certification" %}</h4>
+                  <h5>{% trans "Certified" %}</h5>
+                  <p class="institution"><em>{% trans "Professional Certification Program" %}</em></p>
+                  <p>{% trans "Obtained a professional certification in mobile phone hardware repair, covering diagnostics, component replacement, and device restoration for major smartphone brands." %}</p>
                 </article>
               </div>
             </div>
 
             <div class="resume-item skills-animation" data-aos="fade-up">
-              <h3 class="resume-title">Technical Skills</h3>
+              <h3 class="resume-title">{% trans "Technical Skills" %}</h3>
 
               <div class="resume-content">
                 <div class="skill-item">
-                  <h4>Python &amp; Django</h4>
+                  <h4>{% trans "Python & Django" %}</h4>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
-                  <h4>HTML5, CSS3 &amp; Bootstrap</h4>
+                  <h4>{% trans "HTML5, CSS3 & Bootstrap" %}</h4>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
-                  <h4>JavaScript</h4>
+                  <h4>{% trans "JavaScript" %}</h4>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
-                  <h4>Deployment &amp; Hosting</h4>
+                  <h4>{% trans "Deployment & Hosting" %}</h4>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="skill-item">
-                  <h4>AI &amp; AI Tools</h4>
+                  <h4>{% trans "AI & AI Tools" %}</h4>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -128,51 +84,51 @@
 
           <div class="col-lg-6">
             <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Projects &amp; Experience</h3>
+              <h3 class="resume-title">{% trans "Projects & Experience" %}</h3>
 
               <div class="resume-content">
                 <article class="experience-item">
-                  <h4>AI-Powered Chatbot</h4>
-                  <h5>Python Project</h5>
-                  <p class="company"><em>Personal Project</em></p>
+                  <h4>{% trans "AI-Powered Chatbot" %}</h4>
+                  <h5>{% trans "Python Project" %}</h5>
+                  <p class="company"><em>{% trans "Personal Project" %}</em></p>
                   <ul>
-                    <li>Built an intelligent conversational chatbot using Python and AI APIs</li>
-                    <li>Implemented natural language processing for context-aware responses</li>
-                    <li>Designed and deployed the chatbot for real-world user interaction</li>
+                    <li>{% trans "Built an intelligent conversational chatbot using Python and AI APIs" %}</li>
+                    <li>{% trans "Implemented natural language processing for context-aware responses" %}</li>
+                    <li>{% trans "Designed and deployed the chatbot for real-world user interaction" %}</li>
                   </ul>
                 </article>
 
                 <article class="experience-item">
-                  <h4>Full E-Commerce Website</h4>
-                  <h5>Django + Bootstrap</h5>
-                  <p class="company"><em>Client / Freelance Project</em></p>
+                  <h4>{% trans "Full E-Commerce Website" %}</h4>
+                  <h5>{% trans "Django + Bootstrap" %}</h5>
+                  <p class="company"><em>{% trans "Client / Freelance Project" %}</em></p>
                   <ul>
-                    <li>Developed a complete online store with product listings, cart, and checkout</li>
-                    <li>Built a custom Django admin panel for inventory and order management</li>
-                    <li>Integrated Bootstrap 5 for a fully responsive front-end design</li>
-                    <li>Handled deployment and hosting on a live production server</li>
+                    <li>{% trans "Developed a complete online store with product listings, cart, and checkout" %}</li>
+                    <li>{% trans "Built a custom Django admin panel for inventory and order management" %}</li>
+                    <li>{% trans "Integrated Bootstrap 5 for a fully responsive front-end design" %}</li>
+                    <li>{% trans "Handled deployment and hosting on a live production server" %}</li>
                   </ul>
                 </article>
 
                 <article class="experience-item">
-                  <h4>Cafe Menu Management System</h4>
-                  <h5>Django + Deployment</h5>
-                  <p class="company"><em>Client Project</em></p>
+                  <h4>{% trans "Cafe Menu Management System" %}</h4>
+                  <h5>{% trans "Django + Deployment" %}</h5>
+                  <p class="company"><em>{% trans "Client Project" %}</em></p>
                   <ul>
-                    <li>Designed a full menu management system for a cafe business</li>
-                    <li>Built an admin panel for easy item addition, editing, and removal</li>
-                    <li>Deployed the application to a live server for ongoing client use</li>
+                    <li>{% trans "Designed a full menu management system for a cafe business" %}</li>
+                    <li>{% trans "Built an admin panel for easy item addition, editing, and removal" %}</li>
+                    <li>{% trans "Deployed the application to a live server for ongoing client use" %}</li>
                   </ul>
                 </article>
 
                 <article class="experience-item">
-                  <h4>Certified Mobile Phone Repair</h4>
-                  <h5>Professional Service</h5>
-                  <p class="company"><em>Independent Specialist</em></p>
+                  <h4>{% trans "Certified Mobile Phone Repair" %}</h4>
+                  <h5>{% trans "Professional Service" %}</h5>
+                  <p class="company"><em>{% trans "Independent Specialist" %}</em></p>
                   <ul>
-                    <li>Provide certified repair services for smartphones and mobile devices</li>
-                    <li>Perform hardware diagnostics, screen replacement, and component repair</li>
-                    <li>Serve individual clients with professional, reliable turnaround</li>
+                    <li>{% trans "Provide certified repair services for smartphones and mobile devices" %}</li>
+                    <li>{% trans "Perform hardware diagnostics, screen replacement, and component repair" %}</li>
+                    <li>{% trans "Serve individual clients with professional, reliable turnaround" %}</li>
                   </ul>
                 </article>
               </div>
@@ -184,38 +140,4 @@
 
     </section>
 
-  </main>
-
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Alireza Kamankesh</strong> <span>All Rights Reserved<br></span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/kamankeshalireza" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/alireza-kamankesh" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="mailto:kamankeshalireza30@gmail.com"><i class="bi bi-envelope"></i></a>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
-
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
-  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
-  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assets/js/main.js' %}"></script>
-
-</body>
-</html>
+{% endblock %}
